@@ -32,11 +32,9 @@ This Streamlit application leverages PandasAI and OpenAI's language models to pr
 
 3\. Install dependencies:
 
-   ```
-
+   `
    pip install -r requirements.txt
-
-   ```
+   `
 
 ### Configuration
 
@@ -44,19 +42,15 @@ This Streamlit application leverages PandasAI and OpenAI's language models to pr
 
 2\. Add your OpenAI API Key:
 
-   ```
-
+   `
    OPENAI_API_KEY=your_openai_api_key_here
-
-   ```
+   `
 
 ### Running the App
 
-```
-
+`
 streamlit run app.py
-
-```
+`
 
 ## Usage
 
