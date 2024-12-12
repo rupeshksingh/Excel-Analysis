@@ -2,7 +2,7 @@ import os
 import streamlit as st
 import pandas as pd
 from pandasai.llm import OpenAI
-from pandasai.agent.agent import Agent
+from pandasai import Agent
 from pandasai.ee.agents.judge_agent import JudgeAgent
 from dotenv import load_dotenv
 
@@ -27,7 +27,7 @@ class PandasAISessionManager:
         
         # Initialize LLM and Agent with persistent memory
         llm = OpenAI(
-            api_token=os.getenv("OPENAI_API_KEY"),
+            api_token=st.secrets["OPENAI_API_KEY"],
             temperature=0,
             seed=26
         )
